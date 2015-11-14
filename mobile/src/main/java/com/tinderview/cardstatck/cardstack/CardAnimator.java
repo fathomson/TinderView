@@ -12,7 +12,6 @@ import android.widget.RelativeLayout;
 import android.widget.RelativeLayout.LayoutParams;
 
 import com.tinderview.R;
-import com.tinderview.activities.MainScreenActivity;
 import com.tinderview.cardstatck.animation.RelativeLayoutParamsEvaluator;
 
 import java.util.ArrayList;
@@ -106,11 +105,11 @@ public class CardAnimator {
             //here calling 3 different shadow layout for each Card
             //which will give shadow effect dynamically ...
             if (index == 0)// setting 0 used to add different layout shadow...
-                v.setBackground(MainScreenActivity.context.getResources().getDrawable(R.drawable.card_stack_bg_shadow3));
+                v.setBackgroundResource(R.drawable.card_stack_bg_shadow3);
             else if (index == 1)
-                v.setBackground(MainScreenActivity.context.getResources().getDrawable(R.drawable.card_stack_bg_shadow2));
+                v.setBackgroundResource(R.drawable.card_stack_bg_shadow2);
             else if (index == 2)
-                v.setBackground(MainScreenActivity.context.getResources().getDrawable(R.drawable.card_stack_bg_shadow));
+                v.setBackgroundResource(R.drawable.card_stack_bg_shadow);
         }
     }
 
